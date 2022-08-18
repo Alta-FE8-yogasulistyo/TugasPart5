@@ -1,6 +1,7 @@
 function caesar(offset, input) {
   // your code here
   let solved = "";
+  // let offset1 = offset % 26;
   for (let i = 0; i < input.length; i++) {
     let asciiNum = input[i].charCodeAt();
     if (asciiNum >= 97 && asciiNum <= 122) {
@@ -17,3 +18,18 @@ console.log(caesar(1, "abcdefghijklmnopqrstuvwxyz"));
 // bcdefghijklmnopqrstuvwxyza
 console.log(caesar(1000, "abcdefghijklmnopqrstuvwxyz"));
 // mnopqrstuvwxyzabcdefghijkl
+
+// let solved = "";
+// for (let i = 0; i < input.length; i++) {
+//   let asciiNum = input[i].charCodeAt();
+//   let asciiNum %
+
+//   if (asciiNum < 97) {
+//     asciiNum += 26;
+//   } else if (asciiNum > 122) {
+//     asciiNum -= 26;
+//   }
+//   let asciiNum %
+// }
+
+// return solved;

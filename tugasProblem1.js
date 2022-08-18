@@ -1,10 +1,13 @@
 function compare(a, b) {
-  if (a.length < b.length) {
-    console.log(a);
-  } else {
-    console.log(b);
+  let hasil = "";
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] == b[i]) {
+      hasil += a[i];
+    }
   }
+  return hasil;
 }
+
 console.log(compare("AKA", "AKASHI")); // AKA
 console.log(compare("KANGOORO", "KANG")); // KANG
 console.log(compare("KI", "KIJANG")); // KI
